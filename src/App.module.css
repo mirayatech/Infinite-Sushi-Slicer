@@ -72,3 +72,27 @@
 .slice.adding {
   animation: add-slice 0.5s ease-in;
 }
+
+@keyframes drop-slice {
+  80% {
+    transform: translateY(75vh);
+    width: 8.8888888889vw;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(75vh);
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes add-slice {
+  0% {
+    transform: translateX(50vw);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
