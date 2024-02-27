@@ -1,5 +1,29 @@
+:root {
+  --body-bg-color: #5ebcff;
+  --roll-after-bg-color: #308fd3;
+  --slice-bg-gradient-start: #272727;
+  --slice-bg-gradient-end: #151515;
+  --slice-hover-shadow-color: rgba(0, 0, 0, 0.1);
+  --slice-after-gradient-colors: #bbdb76, #bbdb76 15%, #a7d04e 15%, #a7d04e 20%,
+    #f36c68 20%, #f36c68 35%, #f15550 35%, #f15550 40%, #efe2c5 40%, #efe2c5 45%,
+    #faf6ed 45%, #efe2c5 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background: var(--body-bg-color);
 }
